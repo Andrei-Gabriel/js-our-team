@@ -45,6 +45,21 @@ console.log(members);
 let membersCard = "";
 for(let i = 0; i < members.length; i++){
     // Errore
+    // membersCard += `
+    // <div class="team-card">
+    //     <div class="card-image">
+    //         <img
+    //         src="${members.img}"
+    //         alt="${members.surname} ${members.name}"
+    //         />
+    //     </div>
+    //         <div class="card-text">
+    //         <h3>${members.surname} ${members.name}</h3>
+    //         <p>${members.role}</p>
+    //     </div>
+    // </div>`
+    
+    // Errore
     // for(let key in members){
     //     membersCard += `
     //     <div class="team-card">
