@@ -40,3 +40,59 @@ const members = [
 
 // Stampa dell'intero oggetto
 console.log(members);
+
+// Inserisco dati dei membri nell'HTML sottoforma di card
+let membersCard = "";
+for(let i = 0; i < members.length; i++){
+    // Errore
+    // for(let key in members){
+    //     membersCard += `
+    //     <div class="team-card">
+    //         <div class="card-image">
+    //           <img
+    //             src="${members["img"]}"
+    //             alt="${members["surname"]} ${members["name"]}"
+    //           />
+    //         </div>
+    //         <div class="card-text">
+    //           <h3>${members["surname"]} ${members["name"]}</h3>
+    //           <p>${members["role"]}</p>
+    //         </div>
+    //     </div>`
+    // }
+
+    // Errore
+    // for(let key in members){
+    //     membersCard += `
+    //     <div class="team-card">
+    //         <div class="card-image">
+    //           <img
+    //             src="${members[key]}"
+    //             alt="${members[key]} ${members[key]}"
+    //           />
+    //         </div>
+    //         <div class="card-text">
+    //           <h3>${members[key]} ${members[key]}</h3>
+    //           <p>${members[key]}</p>
+    //         </div>
+    //     </div>`
+    // }
+
+    // Errore
+    // for(let key in members){
+    //     membersCard += `
+    //     <div class="team-card">
+    //         <div class="card-image">
+    //           <img
+    //             src="${members[img]}"
+    //             alt="${members[surname]} ${members[name]}"
+    //           />
+    //         </div>
+    //         <div class="card-text">
+    //           <h3>${members[surname]} ${members[name]}</h3>
+    //           <p>${members[role]}</p>
+    //         </div>
+    //     </div>`
+    // }
+}
+document.querySelector(".team-container").innerHTML = membersCard;
