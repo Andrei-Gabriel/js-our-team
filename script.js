@@ -44,6 +44,20 @@ console.log(members);
 // Inserisco dati dei membri nell'HTML sottoforma di card
 let membersCard = "";
 for(let i = 0; i < members.length; i++){
+    membersCard += `
+    <div class="team-card">
+        <div class="card-image">
+            <img
+            src="${members[i].img}"
+            alt="${members[i].surname} ${members[i].name}"
+            />
+        </div>
+            <div class="card-text">
+            <h3>${members[i].surname} ${members[i].name}</h3>
+            <p>${members[i].role}</p>
+        </div>
+    </div>`
+    
     // Errore
     // membersCard += `
     // <div class="team-card">
